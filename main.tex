@@ -24,7 +24,6 @@
 
 \documentclass[final,table]{beamer}
 \usepackage{multirow}
-\usepackage{subcaption}
 
 \usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
 \usepackage{array}
@@ -35,6 +34,7 @@
 \usepackage{bm}
 \usepackage{multirow}
 \usepackage{adjustbox}
+\usepackage{multicol}
 \setbeamercolor{block title}{fg=black,bg=} % Colors of the block titles
 \setbeamercolor{block body}{fg=black,bg=} % Colors of the body of blocks
 \setbeamercolor{block alerted title}{fg=white,bg=black} % Colors of the highlighted block titles
@@ -110,8 +110,6 @@
 
 \author{Matthew Andres Moreno and Charles Ofria} % Author(s)
 
-\institute{Michigan State University}% Institution(s)
-
 %----------------------------------------------------------------------------------------
 
 \setbeamerfont{caption}{size=\footnotesize}
@@ -142,8 +140,11 @@
 \input{tex/introduction.tex}
 
 \begin{block}{References}
+\vspace{-1ex}
+\begin{multicols}{2}
 {\tiny\bibliographystyle{abbrv}
 \bibliography{bibl}}
+\end{multicols}
 \end{block}
 
 \input{tex/acknowledgement.tex}
